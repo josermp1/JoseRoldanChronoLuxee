@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/principal.css">
+    <link rel="stylesheet" href="css/contactanos.css">
+    <title>Chrono Luxe - Contáctanos</title>
+    <img src="ima/logo.jpg" alt="Logo" class="logo">
+
+</head>
+<body>
+    <header>
+        <h1>Chrono Luxe</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="sobre nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="contactanos.html">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="mapa">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43683.77071135947!2d-90.4962614155644!3d14.591307480725241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a3c793b98d83%3A0xeef9af0a626eb633!2sOakland%20Place!5e0!3m2!1ses!2sgt!4v1728258318414!5m2!1ses!2sgt" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<div class="logo">
+     <img src="ima/logo.jpg" width="300" height="200">
+</div>
+
+<form
+  action="https://formspree.io/f/xovqawlp"
+  method="POST"
+>
+ <label>
+    tu nombre:
+    <input type="nombres" name="nombres">
+  </label>
+  <!--a-->
+  <label>
+    tus apellidos:
+    <input type="apellidos" name="apellidos">
+  </label>
+<!--a-->
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <!--a-->
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+
+ 
+  <button type="submit">Send</button>
+</form>
+<body onclick="playAudio()">
+    <audio id="store" loop>
+        <source src="audio/store.mp3" type="audio/mpeg">
+    </audio>
+    <script>
+        function playAudio() {
+            document.getElementById("store").play();
+        }
+    </script>
+</body>
+ <p>&copy; 2024 Chrono Luxe. Todos los derechos reservados.(dar click para darle play a la cancion)</p>
+
+      
+</body>
+</html>

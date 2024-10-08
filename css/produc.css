@@ -1,0 +1,65 @@
+.cartelera {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.fila {
+    display: flex;
+    justify-content: space-between; 
+    gap: 25px; 
+}
+
+.tarjeta {
+    width: 250px;
+    height: 350px; 
+    perspective: 1000px;
+    align-items: center;
+}
+
+.tarjeta-interna {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.tarjeta:hover .tarjeta-interna {
+    transform: rotateY(180deg);
+}
+
+.tarjeta-frente, .tarjeta-detras {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tarjeta-frente img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(0.90);
+}
+
+.tarjeta-detras {
+    background-color: #333;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+    padding: 20px;
+    text-align: center;
+    font-size: 12.5px;
+    transform:  rotateY(180deg) scale(0.85);
+
+}
+
+
+
